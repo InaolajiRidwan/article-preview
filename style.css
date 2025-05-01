@@ -189,10 +189,6 @@ body {
 
   .card__image {
     
-  }
-
-  .card__image {
-    
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top-left-radius: none;
@@ -207,7 +203,7 @@ body {
     max-width: 800px;
     display: none;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1rem;
     transform: translate(-50px -50px);
     padding: 3.2rem;
     align-items: center;
@@ -258,8 +254,41 @@ body {
   }
  
 
-  .share-icon img {
+
+
+}
+
+
+@media (max-width: 475px) {
+ 
+
+  .active-state {
+    bottom: -8px;
+    padding: 3rem;
   }
 
+  .active-state .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  .active-state .icons span {
+    letter-spacing: 3px;
+    color: hsl(214, 17%, 51%);
+    line-height: 1;
+  }
 
+  .active-state .icons .icons-icon {
+    display: flex;
+    gap: 10px;
+  }
+
+  .share-icon {
+    background-color: hsl(212, 23%, 69%);
+    border-radius: 100%;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+  }
 }
